@@ -1,7 +1,13 @@
-public double areaCircle(double r){
-	return 2*3.14*r*r;
-}
+import java.util.Scanner;
 
-public void areaCircle(double r){
-	system.out.println(""+areaCircle(r)/2); 
+public class AreaCircle{
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		double radius;
+		double area;
+		
+		System.out.print("Enter radius value: ");
+		radius = scan.nextDouble();
+		area = 2*Math.PI*radius*radius;
+	}
 }
